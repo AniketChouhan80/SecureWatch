@@ -1,0 +1,225 @@
+/* body initials */
+
+/* set up initials for body */
+body {
+  /* background-image:url(https://img.freepik.com/free-vector/video-surveillance-security-cameras-realistic-composition-black-white-cameras-form-circle-illustration_1284-61014.jpg?w=2000); */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Style for the scrollbar */
+body::-webkit-scrollbar {
+  width: 5px; /* Decrease the width of the scrollbar */
+  height: 50%; /* Decrease the height of the scrollbar by 50% */
+}
+
+/* Style for the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #808080; /* Set the color of the thumb to gray */
+  border-radius: 5px; /* Round the corners */
+}
+
+/* Style for the scrollbar track */
+body::-webkit-scrollbar-track {
+  background-color: #f2f2f2; /* Set the color of the track */
+}
+
+/* Hover effect for the scrollbar thumb */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change the color on hover */
+}
+
+/* Active effect for the scrollbar thumb */
+body::-webkit-scrollbar-thumb:active {
+  background-color: #333; /* Change the color when active */
+}
+
+/* Focus effect for the scrollbar */
+body:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px #808080; /* Add a shadow when focused */
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: bolder;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* We make every box as */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 400px;
+}
+
+
+
+/* Clear floats after the columns */
+
+.row {
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* Setting up col width upto 4 col layout */
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.3%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col {
+  width: 100%;
+}
+
+/* Text aligning classes */
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.box-gutter {
+  column-gap: 10px;
+}
+
+/* Setting maximum width of image */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.width-75 {
+  flex: 0 0 75%;
+}
+
+footer .row .col-4 {
+  width: 100%;
+}
+
+footer .row {
+  display: flex;
+  gap: 97px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.outer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .outer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: peru;
+    width: 50vw;
+    justify-content: center;
+    align-items: end;
+    padding: 0 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 29vh;
+  }
+
+  .outer-nav li a {
+    color: black;
+  }
+
+  .navParent {
+    position: relative;
+    z-index: 100000000;
+    top: 251px;
+    left: -600px;
+    margin-left: -540px;
+    transition: all .5s;
+  }
+
+  .home-banner {
+    background-image: url(images/imgpsh_fullsize_anim.jpg);
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+    height: 87vh
+  }
+
+  .outer-nav li a {
+    font-size: x-large;
+  }
+
+  .active {
+    border-bottom: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    max-height: 9vh;
+  }
+
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .homecateg {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-area {
+    margin-left: 0;
+  }
+
+  .content-area .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content-area .row .col-3 {
+    width: 100%;
+  }
+}
